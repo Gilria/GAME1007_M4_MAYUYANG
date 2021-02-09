@@ -48,7 +48,7 @@ public class BuildManager : MonoBehaviour
     private void Update()
     {
         text.text = resourceAmount.ToString();
-        if(click >= 0)
+        if(click > 0)
         {
             clickNum.text = click.ToString();
         }
@@ -57,7 +57,7 @@ public class BuildManager : MonoBehaviour
             clickNum.text = "No more Time";
         }
 
-        if (excavate >= 0)
+        if (excavate > 0)
         {
             excavateNum.text = excavate.ToString();
         }
